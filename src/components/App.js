@@ -6,9 +6,10 @@ import Signup from '../containers/Signup';
 import NavBar from './NavBar';
 import TicketsList from '../containers/TicketsList';
 import ProtectedRoute from '../containers/ProtectedRoute';
+import history from '../history';
 
 const App = () => (
-  <Router>
+  <Router history={history}>
     <Switch>
       <>
         <div className="">

@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
+/* eslint-disable react/no-access-state-in-setstate */
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
@@ -19,11 +21,9 @@ class Login extends Component {
 
   handleSubmit = () => {
     const { state } = this.props.location;
-    const redirectUrl = state ? state.from.pathname : "/";
+    const redirectUrl = state ? state.from.pathname : "/ticketing";
     const auth = this.props.authenticateUser(this.state.account);
-    if (auth !== false && redirectUrl !== '/'){
-      this.props.history.push({ pathname:redirectUrl, state:{resources: state.from.state.resources}});
-    } else if (auth !== false){
+    if (auth !== false){
       this.props.history.push(redirectUrl);
     }
     this.setState({

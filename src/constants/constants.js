@@ -16,3 +16,5 @@ export const initialStateItems = {
 export const GET_ALL_ITEMS = 'GET_ALL_ITEMS';
 export const GET_ALL_ITEMS_PENDING = 'GET_ALL_ITEMS_PENDING';
 export const GET_ALL_ITEMS_ERROR = 'GET_ALL_ITEMS_ERROR';
+
+export const URL = 'https://6f7smj4fdc.execute-api.us-east-1.amazonaws.com/default/techJobMission';

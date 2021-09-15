@@ -1,0 +1,44 @@
+#fixed-sidebar {
+  position: fixed;
+  height: 100vh;
+  max-width: 8%;
+  color: white;
+}
+  .top {
+    width: 100%;
+    height:30%;
+  }
+  .bottom {
+    width: 100%;
+    height:70%;
+  }
+  .toptop {
+    height: 40%;
+    color:grey;
+    font-size: 22px;
+  }
+  .topbottom {
+    height: 60%;
+    color: red;
+    font-size: 22px;
+  }
+  ul.bullets {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .list1{
+    border-left: 3px solid black;
+    width: 100%;
+    height: 8vh;
+    font-size: 22px;
+    color: black;
+    margin-left: 5px;
+  }
+  .list {
+    width: 100%;
+    height: 8vh;
+    font-size: 22px;
+    color: grey;
+  }

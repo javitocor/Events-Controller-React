@@ -47,7 +47,7 @@ class Login extends Component {
       <main>
         <div className='{}'>
           <form className='{}' onSubmit={this.handleSubmit}>
-            <i className="fas fa-jedi mb-4" />
+            <i className="fas fa-ticket-alt mb-4" />
             <h1 className="h3 mb-3 font-weight-normal text-secondary">Please log in</h1>
             <label className="sr-only">Username</label>
             <input type="text" className="form-control mb-2" name="username" placeholder="Username" required="" value={this.state.account.username} onChange={this.handleChange} />

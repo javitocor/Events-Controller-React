@@ -1,0 +1,15 @@
+.main {
+  width: 92%;
+  margin-left:8%;
+  height: 100vh;
+  padding: 20rem 10rem;
+  background: url(https://cdn.pixabay.com/photo/2017/11/24/10/43/ticket-2974645__340.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.jumbo {
+  background-color: white;
+}

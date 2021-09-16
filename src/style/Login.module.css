@@ -8,13 +8,20 @@
   padding-top: 55px;
   padding-bottom: 20px;
   text-align: center!important;
+  background: url(https://cdn.pixabay.com/photo/2017/11/24/10/43/ticket-2974645__340.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .formsignin {
   width: 100%;
   max-width: 330px;
-  padding: 15px;
+  padding: 35px;
   margin: 0 auto;
+  background-color: white;
+  border-radius: 25px;
 }
 
 .icon {

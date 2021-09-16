@@ -45,7 +45,8 @@ class Signup extends Component {
           <input type="password" className="form-control mb-3" name="password" placeholder="Password" required="" value={this.state.account.password} onChange={this.handleChange} />
           <button className="btn btn-lg btn-secondary btn-block mt-3" type="submit">Sign in</button>
           <p className='mt-3'>
-            Already have account &gt;
+            Already have account 
+            {' '}
             <Link
               name="login"
               to="/login"

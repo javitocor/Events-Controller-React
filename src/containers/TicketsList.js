@@ -4,6 +4,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import Spinner from 'react-bootstrap/Spinner';
 import apiCall  from '../helpers/APICall';
 import style from '../style/TicketsList.module.css';
 import ListItem from '../components/ListItem';
@@ -46,7 +47,7 @@ class TicketsList extends React.Component {
           <p className={style.subtitle}>Estas son las personas que han comprado entrada.</p>
         </div>
         <>
-          {itemsList.length === 0 ? (<div className="d-flex justify-content-center align-items-center pt-5 w-100">Loading...</div>
+          {itemsList.length === 0 ? (<div className="d-flex justify-content-center align-items-center pt-5 w-100"><Spinner animation="grow" /></div>
         ) : (
           itemsList.map((item, index) => (
             <ListItem key={generateKey(index)} item={item} />

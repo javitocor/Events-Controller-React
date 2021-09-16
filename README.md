@@ -19,7 +19,7 @@
 [![Issues][issues-shield]][issues-url] 
 ![Hireable](https://cdn.rawgit.com/hiendv/hireable/master/styles/default/yes.svg) 
 
-# Events Controller react
+# Events Controller React
 
 >  A webapp to manage the tickets selling and attendance to events, users must register/login to access the protected routes, built with React&Redux.
 
@@ -58,14 +58,14 @@ Additional description about the project and its features.
 
 ### Usage
 To have this app on your pc, you need to:
-* [download](https://github.com/javitocor/Trekkie-World-Catalog/archive/development.zip) or clone this repo:
+* [download](https://github.com/javitocor/Events-Controller-React/archive/main.zip) or clone this repo:
   - Clone with SSH:
   ```
-    git@github.com:javitocor/Trekkie-World-Catalog.git
+    git@github.com:javitocor/Events-Controller-React.git
   ```
   - Clone with HTTPS
   ```
-    https://github.com/javitocor/Trekkie-World-Catalog.git
+    https://github.com/javitocor/Events-Controller-React.git
   ```
 
 * In the project directory, you can run:
@@ -101,7 +101,7 @@ To have this app on your pc, you need to:
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/javitocor/Trekkie-World-Catalog/issues).
+Feel free to check the [issues page](https://github.com/javitocor/Events-Controller-React/issues).
 
 ## Show your support
 
@@ -120,11 +120,11 @@ This project is [MIT](lic.url) licensed.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/javitocor/Trekkie-World-Catalog.svg?style=flat-square
-[contributors-url]: https://github.com/javitocor/Trekkie-World-Catalog/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/javitocor/Trekkie-World-Catalog.svg?style=flat-square
-[forks-url]: https://github.com/javitocor/Trekkie-World-Catalog/network/members
-[stars-shield]: https://img.shields.io/github/stars/javitocor/Trekkie-World-Catalog.svg?style=flat-square
-[stars-url]: https://github.com/javitocor/Trekkie-World-Catalog/stargazers
-[issues-shield]: https://img.shields.io/github/issues/javitocor/Trekkie-World-Catalog.svg?style=flat-square
-[issues-url]: https://github.com/javitocor/Trekkie-World-Catalog/issues
+[contributors-shield]: https://img.shields.io/github/contributors/javitocor/Events-Controller-React.svg?style=flat-square
+[contributors-url]: https://github.com/javitocor/Events-Controller-React/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/javitocor/Events-Controller-React.svg?style=flat-square
+[forks-url]: https://github.com/javitocor/Events-Controller-React/network/members
+[stars-shield]: https://img.shields.io/github/stars/javitocor/Events-Controller-React.svg?style=flat-square
+[stars-url]: https://github.com/javitocor/Events-Controller-React/stargazers
+[issues-shield]: https://img.shields.io/github/issues/javitocor/Events-Controller-React.svg?style=flat-square
+[issues-url]: https://github.com/javitocor/Events-Controller-React/issues

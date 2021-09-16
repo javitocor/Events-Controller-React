@@ -8,7 +8,7 @@ const ListItem = (props) => {
     <div className={`${style.content} d-flex flex-row justify-content-center align-items-center`}>
       <div className={`${style.contLeft} d-flex flex-row justify-content-center align-items-center`}>
         <div className={`${style.leftleft} d-flex justify-content-center align-items-center`}>
-          <i className="fas fa-receipt" />
+          <i className="fas fa-receipt" style={{color: item.present ? 'green' : 'red'}} />
         </div>
         <div className={`${style.leftright} d-flex flex-column`}>
           <h6>
@@ -16,7 +16,7 @@ const ListItem = (props) => {
             {' '}
             {item.lastName}
           </h6>
-          <p>Ha entrado</p>
+          <p>{item.present ? 'Ha entrado' : 'No ha entrado'}</p>
         </div>
       </div>
       <div className={`${style.contCenter} d-flex flex-column justify-content-center align-items-start`}>

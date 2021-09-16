@@ -15,7 +15,7 @@ const Modal = (props) => {
             <div className="modal-header">
               <div className={`${style.contLeft2} d-flex flex-row justify-content-center align-items-center`}>
                 <div className={`${style.leftleft2} d-flex justify-content-center align-items-center`}>
-                  <i className="fas fa-receipt" />
+                  <i className="fas fa-receipt" style={{color: item.present ? 'green' : 'red'}} />
                 </div>
                 <div className={`${style.leftright2} d-flex flex-column align-items-start"`}>
                   <h6>
@@ -23,7 +23,7 @@ const Modal = (props) => {
                     {' '}
                     {item.lastName}
                   </h6>
-                  <p>Ha entrado</p>
+                  <p>{item.present ? 'Ha entrado' : 'No ha entrado'}</p>
                 </div>
               </div>
               <button type="button" className="close" data-dismiss="modal" aria-label="Close">

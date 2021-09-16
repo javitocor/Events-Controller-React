@@ -14,7 +14,7 @@ const apiCall = () => async dispatch => {
     const response = await fetch(Url); 
       
     const data = await response.json();
-
+    
     dispatch(getAllItems(data));
 
     return data;

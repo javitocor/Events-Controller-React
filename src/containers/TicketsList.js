@@ -1,40 +1,60 @@
-/* eslint-disable no-useless-constructor */
 /* eslint-disable react/forbid-prop-types */
+/* eslint-disable react/no-access-state-in-setstate */
+/* eslint-disable react/no-unused-state */
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import Spinner from 'react-bootstrap/Spinner';
+import InfiniteScroll from 'react-infinite-scroll-component';
 import apiCall  from '../helpers/APICall';
 import style from '../style/TicketsList.module.css';
 import ListItem from '../components/ListItem';
 import generateKey from '../helpers/generateKey';
 
+
+
 class TicketsList extends React.Component {
   constructor(props) {
     super(props)
+    console.log(this.state)
+    this.state = { 
+      count:{
+        prev: 0,
+        next: 10
+      },
+      hasMore: true,
+      current: [],
+    }
   }
 
   async componentDidMount() {
     const { getAllItems } = this.props;
     try {
       await getAllItems();
+      this.setState({current: this.props.items.itemsList.slice(this.state.count.prev, this.state.count.next)})
     } catch (error) {
       console.log(error)
     }        
   }
 
-  componentDidUpdate(prevProps){
-    if(prevProps.items.itemsList !== this.props.items.itemsList){
-      console.log('Hello world!')
+  getMoreData = () => {
+    if (this.state.current.length === this.props.items.itemsList.length) {
+      this.setState({HasMore: false});
+      return;
     }
+    setTimeout(() => {
+      this.setState({current: this.state.current.concat(this.props.items.itemsList.slice(this.state.count.prev + 10, this.state.count.next + 10))})
+    }, 500)
+    this.setState({count:{ prev: this.state.count.prev + 10, next: this.state.count.next + 10 }})
   }
 
   render() {
     const { items, auth } = this.props;
     const { itemsList } = items;
     const {user } = auth;
-    
+    console.log(this.state.current)
     return (
       <main className={`${style.main} container`}>
         <div className={style.title}>
@@ -49,9 +69,20 @@ class TicketsList extends React.Component {
         <>
           {itemsList.length === 0 ? (<div className="d-flex justify-content-center align-items-center pt-5 w-100"><Spinner animation="grow" /></div>
         ) : (
-          itemsList.map((item, index) => (
-            <ListItem key={generateKey(index)} item={item} />
-          ))
+          <InfiniteScroll
+            dataLength={this.state.current.length}
+            next={this.getMoreData}
+            hasMore={this.state.hasMore}
+            loader={<div className="d-flex justify-content-center align-items-center pt-5 w-100"><Spinner animation="grow" /></div>}
+          >
+            <div>
+              {this.state.current && this.state.current.map(((item, index) => (
+                <ListItem key={generateKey(index)} item={item} />
+          )))
+        }
+            </div>
+          </InfiniteScroll>
+          
           )}
         </>     
       </main>

@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import apiCall  from '../helpers/APIcall';
+import apiCall  from '../helpers/APICall';
 import style from '../style/TicketsList.module.css';
 import ListItem from '../components/ListItem';
 import generateKey from '../helpers/generateKey';

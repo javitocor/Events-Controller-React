@@ -7,11 +7,12 @@ import {
 
 const apiCall = () => async dispatch => {
   const Url = URL;
-
+  
   try {
     dispatch(getAllItemsPending());
-
-    const response = await fetch(Url, { mode: 'cors' });
+    
+    const response = await fetch(Url); 
+      
     const data = await response.json();
 
     dispatch(getAllItems(data));

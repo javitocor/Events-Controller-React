@@ -23,7 +23,7 @@ class NavBar extends Component {
               <a href="#"><i className="fas fa-list" /></a>
             </div>
             <div className={`${navbar.topbottom} d-flex justify-content-center align-items-start mt-4`}>
-              <i className="fas fa-globe-europe" />
+              <i className="fas fa-atom" />
             </div>
           </div>
           <div className={`${navbar.bottom} d-flex justify-content-center align-items-start w-100`}>
@@ -56,6 +56,7 @@ class NavBar extends Component {
                   data-toggle="list"
                   role="tab"
                   aria-controls="home"
+                  className={`${navbar.list} d-flex justify-content-center align-items-center`}
                 >
                   <i className="fas fa-sign-out-alt" />
                 </Link>

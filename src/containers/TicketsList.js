@@ -1,3 +1,5 @@
+/* eslint-disable no-empty */
+/* eslint-disable no-useless-constructor */
 /* eslint-disable react/forbid-prop-types */
 import React from 'react';
 import PropTypes from 'prop-types';
@@ -10,8 +12,7 @@ import generateKey from '../helpers/generateKey';
 
 class TicketsList extends React.Component {
   constructor(props) {
-    super(props);
-    this.handleClick = this.handleClick.bind(this);
+    super(props)
   }
 
   async componentDidMount() {
@@ -23,11 +24,18 @@ class TicketsList extends React.Component {
     }        
   }
 
+  componentDidUpdate(prevProps){
+    if(prevProps.items.itemsList !== this.props.items.itemsList){
+      console.log('pokemons state has changed.')
+    }
+  }
+
   render() {
-    const { items, user } = this.props;
+    const { items, auth } = this.props;
     const { itemsList } = items;
+    const {user } = auth;
     
-    return itemsList.length === 0 ? <div className="d-flex justify-content-center align-items-center pt-5 w-100">Loading...</div> : (
+    return (
       <main className={`${style.main} container`}>
         <div className={style.title}>
           <h3 className={style.welcome}>
@@ -39,10 +47,12 @@ class TicketsList extends React.Component {
           <p className={style.subtitle}>Estas son las personas que han comprado entrada.</p>
         </div>
         <>
-          {itemsList.map((item, index) => (
+          {itemsList.length === 0 ? (<div className="d-flex justify-content-center align-items-center pt-5 w-100">Loading...</div>
+        ) : (
+          itemsList.map((item, index) => (
             <ListItem key={generateKey(index)} item={item} />
-          ))}
-          ;
+          ))
+          )}
         </>     
       </main>
     );

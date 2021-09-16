@@ -3,16 +3,16 @@ import style from '../style/Modal.module.css';
 
 const Modal = (props) => {
   const { item } = props;
-
+  
   return (
     <div className={style.icon}>
-      <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+      <button type="button" className={style.modalButton} data-toggle="modal" data-target={`#${item._id}`}>
         <i className="fas fa-ellipsis-h" />
       </button>
-      <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div className={`modal fade ${style.modal}`} id={item._id} tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div className={`modal-dialog ${style.custom2} modal-lg`} role="document">
           <div className={`modal-content ${style.custom3}`}>
-            <div className="modal-header">
+            <div className={`modal-header ${style.modalheader}`}>
               <div className={`${style.contLeft2} d-flex flex-row justify-content-center align-items-center`}>
                 <div className={`${style.leftleft2} d-flex justify-content-center align-items-center`}>
                   <i className="fas fa-receipt" style={{color: item.present ? 'green' : 'red'}} />

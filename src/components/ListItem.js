@@ -4,6 +4,7 @@ import Modal from './Modal';
 
 const ListItem = (props) => {
   const { item } = props;
+  
   return (
     <div className={`${style.content} d-flex flex-row justify-content-center align-items-center`}>
       <div className={`${style.contLeft} d-flex flex-row justify-content-center align-items-center`}>
@@ -16,20 +17,20 @@ const ListItem = (props) => {
             {' '}
             {item.lastName}
           </h6>
-          <p>{item.present ? 'Ha entrado' : 'No ha entrado'}</p>
+          <p className="text-muted">{item.present ? 'Ha entrado' : 'No ha entrado'}</p>
         </div>
       </div>
       <div className={`${style.contCenter} d-flex flex-column justify-content-center align-items-start`}>
         <div className="centcent">
           <h6>ID</h6>
-          <p>{item._id}</p>
+          <p className="text-muted">{item._id}</p>
         </div>
       </div>
       <div className={`${style.contRight} d-flex flex-row justify-content-between align-items-center`}>
         <div className={`${style.rightleft} d-flex flex-column justify-content-center align-item-start`}>
           <div className="contrightleft">
             <h6>N de Ticket</h6>
-            <p>{item.ticket}</p>
+            <p className="text-muted">{item.ticket}</p>
           </div>
         </div>
         <div className={`${style.rightright} d-flex flex-row justify-content-end align-item-end w-100`}>

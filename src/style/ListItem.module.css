@@ -3,22 +3,22 @@
   border-bottom: 1px solid grey;
 }
 .contLeft{
-  width: 35%;
+  width: 28%;
   border-right: 1px solid grey;
   padding: 5px;
 }
 .contCenter{
-  width : 25%;
+  width : 30%;
   border-right: 1px solid grey;
   padding: 5px 15px;
 }
 .contRight{
-  width: 50%;
-  padding: 5px 10px;
+  width: 42%;
+  padding: 5px 20px;
 }
 .leftleft{
   width: 30%;
-  font-size: 40px;
+  font-size: 55px;
 }
 .leftright{
   width: 70%;

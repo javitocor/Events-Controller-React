@@ -9,7 +9,10 @@
   width: 80%;
   font-size:22px;
 }
-.modal-header{
+.leftright2 h6{
+  font-size:22px;
+}
+.modalsheader{
   border-bottom: 0px solid grey !important;
 }
 .modtop{
@@ -71,9 +74,20 @@ height: 100%;
 vertical-align: middle;
 margin-right: -4px;
 }
-.modal-header{
+.modalheader{
 padding: 2.3rem 2.3rem 1.5rem 0.5rem !important;
 }
 .icon {
   font-size: 22px;
+}
+
+.modalButton{
+  border: 0 !important;
+  background-color: transparent !important;
+}
+
+button:focus{
+  border: 0 !important;
+  background-color: transparent !important;
+  outline: 0 !important;
 }

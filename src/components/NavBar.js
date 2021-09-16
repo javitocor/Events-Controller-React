@@ -20,7 +20,7 @@ class NavBar extends Component {
         <div className="d-flex flex-column justify-content-around align-items-center h-100">
           <div className={navbar.top}>
             <div className={`${navbar.toptop} d-flex justify-content-center align-items-center`}>
-              <i className="fas fa-list" />
+              <a href="#"><i className="fas fa-list" /></a>
             </div>
             <div className={`${navbar.topbottom} d-flex justify-content-center align-items-start mt-4`}>
               <i className="fas fa-globe-europe" />
@@ -46,7 +46,6 @@ class NavBar extends Component {
               <li className={`${navbar.list} d-flex justify-content-center align-items-center`}><a href="#"><i className="far fa-clipboard" /></a></li>
               <li className={`${navbar.list} d-flex justify-content-center align-items-center`}><a href="#"><i className="fas fa-chart-bar" /></a></li>
               <li className={`${navbar.list} d-flex justify-content-center align-items-center`}><a href="#"><i className="fas fa-money-bill" /></a></li>
-              <li className={`${navbar.list} d-flex justify-content-center align-items-center`}><a href="#"><i className="far fa-question-circle" /></a></li>
               <li className={`${navbar.list} d-flex justify-content-center align-items-center`}><a href="#"><i className="far fa-question-circle" /></a></li>
               {loggedIn && (
                 <Link

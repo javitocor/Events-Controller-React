@@ -68,21 +68,20 @@ class TicketsList extends React.Component {
         </div>
         <>
           {itemsList.length === 0 ? (<div className="d-flex justify-content-center align-items-center pt-5 w-100"><Spinner animation="grow" /></div>
-        ) : (
-          <InfiniteScroll
-            dataLength={this.state.current.length}
-            next={this.getMoreData}
-            hasMore={this.state.hasMore}
-            loader={<div className="d-flex justify-content-center align-items-center pt-5 w-100"><Spinner animation="grow" /></div>}
-          >
-            <div>
-              {this.state.current && this.state.current.map(((item, index) => (
-                <ListItem key={generateKey(index)} item={item} />
-          )))
-        }
-            </div>
-          </InfiniteScroll>
-          
+          ) : (
+            <InfiniteScroll
+              dataLength={this.state.current.length}
+              next={this.getMoreData}
+              hasMore={this.state.hasMore}
+              loader={<div className="d-flex justify-content-center align-items-center pt-5 w-100"><Spinner animation="grow" /></div>}
+            >
+              <div>
+                {this.state.current && this.state.current.map(((item, index) => (
+                  <ListItem key={generateKey(index)} item={item} />
+                )))
+                }
+              </div>
+            </InfiniteScroll>          
           )}
         </>     
       </main>

@@ -1,70 +1,124 @@
-# Getting Started with Create React App
+<!--
+*** Thanks for checking out this README Template. If you have a suggestion that would
+*** make this better, please fork the repo and create a pull request or simply open
+*** an issue with the tag "enhancement".
+*** Thanks again! Now go create something AMAZING! :D
+-->
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
+[![Contributors][contributors-shield]][contributors-url] 
+[![Forks][forks-shield]][forks-url] 
+[![Stargazers][stars-shield]][stars-url] 
+[![Issues][issues-shield]][issues-url] 
+![Hireable](https://cdn.rawgit.com/hiendv/hireable/master/styles/default/yes.svg) 
 
-## Available Scripts
+# Events Controller react
 
-In the project directory, you can run:
+>  A webapp to manage the tickets selling and attendance to events, users must register/login to access the protected routes, built with React&Redux.
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Landing Page:
+![screenshot](./src/assets/screenshot.png)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Episodes Page: 
+![screenshot](./src/assets/screenshot1.png)
 
-### `yarn test`
+Additional description about the project and its features.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Built With
 
-### `yarn build`
+- CSS
+- JAVASCRIPT
+- NPM
+- REACT
+- REDUX
+- ESLINT
+- PRETTIER
+- REACT INFINITE SCROLL COMPONENT
+- REACT BOOTSTRAP
+- LOCALSTORAGE
+- GITHUB ACTIONS
+- VSCODE
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
+- Follow the live demo link and enjoy the site.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Usage
+To have this app on your pc, you need to:
+* [download](https://github.com/javitocor/Trekkie-World-Catalog/archive/development.zip) or clone this repo:
+  - Clone with SSH:
+  ```
+    git@github.com:javitocor/Trekkie-World-Catalog.git
+  ```
+  - Clone with HTTPS
+  ```
+    https://github.com/javitocor/Trekkie-World-Catalog.git
+  ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* In the project directory, you can run:
 
-### `yarn eject`
+  - `$ npm install` - installs all the dependencies required by the project
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+  - `$ npm start` - runs the app in the development mode:
+    - Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+    - The page will reload if you make edits.
+    - You will also see any lint errors in the console.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  - `$ npm run test`
+    - Launches the test runner in the interactive watch mode.
+    - See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+  - `$ npm run build`
+    - Builds the app for production to the `build` folder.
+    - It correctly bundles React in production mode and optimizes the build for the best performance.
+    - The build is minified and the filenames include the hashes.
+    - Your app is ready to be deployed!
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Future Features
+- Add authentication endpoint.
 
-## Learn More
+## Author
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+👤 Javier Oriol Correas Sanchez Cuesta 
+- Github: [@javitocor](https://github.com/javitocor) 
+- Twitter: [@JavierCorreas4](https://twitter.com/JavierCorreas4) 
+- Linkedin: [Javier Oriol Correas Sanchez Cuesta](https://www.linkedin.com/in/javier-correas-sanchez-cuesta-15289482/) 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🤝 Contributing
 
-### Code Splitting
+Contributions, issues and feature requests are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Feel free to check the [issues page](https://github.com/javitocor/Trekkie-World-Catalog/issues).
 
-### Analyzing the Bundle Size
+## Show your support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Give a ⭐️ if you like this project!
 
-### Making a Progressive Web App
+## Acknowledgments 🚀
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- [React Documentation](https://reactjs.org/docs/getting-started.html)
+- [Redux](https://redux.js.org/)
+- [react infinite scroll component](https://github.com/ankeetmaini/react-infinite-scroll-component)
+- [React Bootstrap](https://react-bootstrap.github.io/)
 
-### Advanced Configuration
+## 📝 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This project is [MIT](lic.url) licensed.
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/javitocor/Trekkie-World-Catalog.svg?style=flat-square
+[contributors-url]: https://github.com/javitocor/Trekkie-World-Catalog/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/javitocor/Trekkie-World-Catalog.svg?style=flat-square
+[forks-url]: https://github.com/javitocor/Trekkie-World-Catalog/network/members
+[stars-shield]: https://img.shields.io/github/stars/javitocor/Trekkie-World-Catalog.svg?style=flat-square
+[stars-url]: https://github.com/javitocor/Trekkie-World-Catalog/stargazers
+[issues-shield]: https://img.shields.io/github/issues/javitocor/Trekkie-World-Catalog.svg?style=flat-square
+[issues-url]: https://github.com/javitocor/Trekkie-World-Catalog/issues

@@ -13,7 +13,7 @@ class Home extends Component {
             <h1 className="display-4">Welcome to Event Handlers!</h1>
             <p className="lead">The place where you can manage all your events!</p>
             <hr className="my-4" />
-            <p className="">Folow up all your events and the people assiting.</p>
+            <p className="">Folow up all your events and the people attending.</p>
             <div className="lead">
               {!loggedIn && (
                 <p className="lead">

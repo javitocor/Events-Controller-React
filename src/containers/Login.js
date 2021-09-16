@@ -2,7 +2,7 @@
 /* eslint-disable react/no-access-state-in-setstate */
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { withRouter } from "react-router-dom";
+import { withRouter, Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { bindActionCreators } from 'redux';
 import { authenticateUser } from "../actions/auth";
@@ -54,6 +54,19 @@ class Login extends Component {
             <label className="sr-only">Password</label>
             <input type="password" className="form-control mb-3" name="password" placeholder="Password" required="" value={this.state.account.password} onChange={this.handleChange} />
             <button className="btn btn-lg btn-secondary btn-block mt-3" type="submit">Log in</button>
+            <p>
+              Need an account
+              <Link
+                name="signup"
+                to="/signup"
+                id="list-home-list"
+                data-toggle="list"
+                role="tab"
+                aria-controls="home"
+              >
+                SIGN UP
+              </Link>
+            </p>
             <p className="mt-5 mb-3 text-muted">STAR WARS © 2021</p>
           </form>
         </div>

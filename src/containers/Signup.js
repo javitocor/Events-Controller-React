@@ -3,7 +3,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { bindActionCreators } from 'redux';
-import { withRouter } from "react-router-dom";
+import { withRouter, Link } from "react-router-dom";
 import { SignUp } from "../actions/auth";
 
 class Signup extends Component {
@@ -45,6 +45,19 @@ class Signup extends Component {
             <label className="sr-only" htmlFor="password">Password</label>
             <input type="password" className="form-control mb-3" name="password" placeholder="Password" required="" value={this.state.account.password} onChange={this.handleChange} />
             <button className="btn btn-lg btn-secondary btn-block mt-3" type="submit">Sign in</button>
+            <p>
+              Already have account 
+              <Link
+                name="login"
+                to="/login"
+                id="list-home-list"
+                data-toggle="list"
+                role="tab"
+                aria-controls="home"
+              >
+                LOG IN
+              </Link> 
+            </p>
             <p className="mt-5 mb-3 text-muted">JaviCorp © 2021</p>
           </form>
         </div>

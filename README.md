@@ -27,8 +27,14 @@
 Landing Page:
 ![screenshot](./src/assets/screenshot.png)
 
-Episodes Page: 
-![screenshot](./src/assets/screenshot1.png)
+Login Page: 
+![screenshot](./src/assets/screenshot4.png)
+
+Main Page: 
+![screenshot](./src/assets/screenshot2.png)
+
+Modal Page: 
+![screenshot](./src/assets/screenshot3.png)
 
 Additional description about the project and its features.
 

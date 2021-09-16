@@ -21,8 +21,7 @@ class Signup extends Component {
 
   handleSubmit = () => {
     this.props.createUser(this.state.account);
-    const { state } = this.props.location;
-    const redirectUrl = state ? state.from.pathname : "/ticketing";
+    const redirectUrl = "/ticketing";
     this.props.history.push(redirectUrl)
   };
 

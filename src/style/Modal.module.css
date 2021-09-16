@@ -12,8 +12,9 @@
 .leftright2 h6{
   font-size:22px;
 }
-.modalsheader{
+.modalheader{
   border-bottom: 0px solid grey !important;
+  padding: 2.3rem 2.3rem 1.5rem 0.5rem !important;
 }
 .modtop{
   width:90%;
@@ -74,9 +75,7 @@ height: 100%;
 vertical-align: middle;
 margin-right: -4px;
 }
-.modalheader{
-padding: 2.3rem 2.3rem 1.5rem 0.5rem !important;
-}
+
 .icon {
   font-size: 22px;
 }

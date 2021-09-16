@@ -1,12 +1,18 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
+import $ from 'jquery';
 import style from '../style/Modal.module.css';
 
 const Modal = (props) => {
   const { item } = props;
   
+  function handleOpen() {
+    window.$(`#${item._id}`).modal('show');
+  }
+
   return (
     <div className={style.icon}>
-      <button type="button" className={style.modalButton} data-toggle="modal" data-target={`#${item._id}`}>
+      <button type="button" onClick={()=>handleOpen()} className={style.modalButton} data-toggle="modal" data-target={`#${item._id}`}>
         <i className="fas fa-ellipsis-h" />
       </button>
       <div className={`modal fade ${style.modal}`} id={item._id} tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

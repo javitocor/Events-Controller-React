@@ -21,8 +21,7 @@ class Login extends Component {
   }
 
   handleSubmit = () => {
-    const { state } = this.props.location;
-    const redirectUrl = state ? state.from.pathname : "/ticketing";
+    const redirectUrl = "/ticketing";
     const auth = this.props.authenticateUser(this.state.account);
     if (auth !== false){
       this.props.history.push(redirectUrl);

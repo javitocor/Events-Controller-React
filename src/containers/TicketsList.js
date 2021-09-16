@@ -1,4 +1,3 @@
-/* eslint-disable no-empty */
 /* eslint-disable no-useless-constructor */
 /* eslint-disable react/forbid-prop-types */
 import React from 'react';
@@ -26,7 +25,7 @@ class TicketsList extends React.Component {
 
   componentDidUpdate(prevProps){
     if(prevProps.items.itemsList !== this.props.items.itemsList){
-      console.log('pokemons state has changed.')
+      console.log('Hello world!')
     }
   }
 
@@ -34,7 +33,7 @@ class TicketsList extends React.Component {
     const { items, auth } = this.props;
     const { itemsList } = items;
     const {user } = auth;
-    
+    console.log(itemsList);
     return (
       <main className={`${style.main} container`}>
         <div className={style.title}>

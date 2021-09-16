@@ -34,7 +34,7 @@ class TicketsList extends React.Component {
     const { items, auth } = this.props;
     const { itemsList } = items;
     const {user } = auth;
-    console.log(itemsList);
+    
     return (
       <main className={`${style.main} container`}>
         <div className={style.title}>

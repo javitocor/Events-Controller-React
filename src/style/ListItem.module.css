@@ -1,0 +1,40 @@
+.content{
+  height: 8rem;
+  border-bottom: 1px solid grey;
+}
+.contLeft{
+  width: 35%;
+  border-right: 1px solid grey;
+  padding: 5px;
+}
+.contCenter{
+  width : 25%;
+  border-right: 1px solid grey;
+  padding: 5px 15px;
+}
+.contRight{
+  width: 50%;
+  padding: 5px 10px;
+}
+.leftleft{
+  width: 30%;
+  font-size: 40px;
+}
+.leftright{
+  width: 70%;
+}
+.centcent {
+  width: 75%;
+  margin:0 auto;
+}
+.rightleft{
+  width: 50%;
+}
+.rightright{
+  width: 50%;
+  font-size: 22px;
+}
+.contrightleft{
+  width: 80%;
+  margin: 0 auto;
+}

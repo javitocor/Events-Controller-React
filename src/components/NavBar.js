@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/control-has-associated-label */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import navbar from '../style/Navbar.module.css'
 
@@ -17,11 +19,13 @@ const NavBar = () => {
         <div className={`${navbar.bottom} d-flex justify-content-center align-items-start w-100`}>
           <ul className={`${navbar.bullets} mt-4`}>
             <li className={`${navbar.list1} d-flex justify-content-center align-items-center`}><i className="fas fa-th-large" /></li>
-            <li className={`${navbar.list} d-flex justify-content-center align-items-center`}><i className="fas fa-graduation-cap" /></li>
-            <li className={`${navbar.list} d-flex justify-content-center align-items-center`}><i className="far fa-clipboard" /></li>
-            <li className={`${navbar.list} d-flex justify-content-center align-items-center`}><i className="fas fa-chart-bar" /></li>
-            <li className={`${navbar.list} d-flex justify-content-center align-items-center`}><i className="fas fa-money-bill" /></li>
-            <li className={`${navbar.list} d-flex justify-content-center align-items-center`}><i className="far fa-question-circle" /></li>
+            <li className={`${navbar.list} d-flex justify-content-center align-items-center`}> 
+              <a href="#"><i className="fas fa-graduation-cap" /></a>
+            </li>
+            <li className={`${navbar.list} d-flex justify-content-center align-items-center`}><a href="#"><i className="far fa-clipboard" /></a></li>
+            <li className={`${navbar.list} d-flex justify-content-center align-items-center`}><a href="#"><i className="fas fa-chart-bar" /></a></li>
+            <li className={`${navbar.list} d-flex justify-content-center align-items-center`}><a href="#"><i className="fas fa-money-bill" /></a></li>
+            <li className={`${navbar.list} d-flex justify-content-center align-items-center`}><a href="#"><i className="far fa-question-circle" /></a></li>
           </ul>
         </div>
       </div>

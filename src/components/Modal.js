@@ -1,23 +1,23 @@
-import React from 'react'
+import React from 'react';
+import style from '../style/Modal.module.css';
 
 const Modal = (props) => {
   const { item } = props;
 
   return (
-    <div className=" w-75 mx-auto my-3 text-center">
+    <div className={style.icon}>
       <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
         <i className="fas fa-ellipsis-h" />
       </button>
-
       <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div className="modal-dialog" role="document">
-          <div className="modal-content">
+        <div className={`modal-dialog ${style.custom2} modal-lg`} role="document">
+          <div className={`modal-content ${style.custom3}`}>
             <div className="modal-header">
-              <div className="contLeft d-flex flex-row justify-content-center align-items-center modal-titles">
-                <div className="leftleft d-flex justify-content-center align-items-center">
+              <div className={`${style.contLeft2} d-flex flex-row justify-content-center align-items-center`}>
+                <div className={`${style.leftleft2} d-flex justify-content-center align-items-center`}>
                   <i className="fas fa-receipt" />
                 </div>
-                <div className="leftright d-flex flex-column">
+                <div className={`${style.leftright2} d-flex flex-column align-items-start"`}>
                   <h6>
                     {item.firstName} 
                     {' '}
@@ -31,7 +31,34 @@ const Modal = (props) => {
               </button>
             </div>
             <div className="modal-body">
-              ...
+              <div className={`${style.modtop} d-flex flex-row justify-content-start align-items-start`}>
+                <div className={`${style.modttopleft} d-flex flex-column justify-content-center align-items-start`}>
+                  <h6>ID</h6>
+                  <p className="text-muted">{item._id}</p>
+                </div>
+                <div className={`${style.modtopright} d-flex flex-column justify-content-center align-items-start`}>
+                  <h6>N de Ticket</h6>
+                  <p className="text-muted">{item.ticket}</p>
+                </div>
+              </div>
+              <div className={`${style.modcenter} d-flex flex-row justify-content-start align-items-start`}>
+                <div className={`${style.modtcenterleft} d-flex flex-column justify-content-center align-items-start`}>
+                  <h6>Fecha de nacimiento</h6>
+                  <p className="text-muted">{item.birthdate}</p>
+                </div>
+                <div className={`${style.modtcentercenter} d-flex flex-column justify-content-center align-items-start`}>
+                  <h6>Email</h6>
+                  <p className="text-muted">{item.email}</p>
+                </div>
+                <div className={`${style.modtcenterright} d-flex flex-column justify-content-center align-items-start`}>
+                  <h6>Telefono</h6>
+                  <p className="text-muted">{item.phone}</p>
+                </div>
+              </div>
+              <div className={`${style.modbottom} d-flex flex-column justify-content-start align-items-start`}>
+                <h6>Direccion</h6>
+                <p className="text-muted">{item.address}</p>
+              </div>
             </div>
           </div>
         </div>

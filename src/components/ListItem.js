@@ -1,5 +1,5 @@
 import React from 'react';
-import style from '../style/TicketsList.module.css';
+import style from '../style/listItem.module.css';
 import Modal from './Modal';
 
 const ListItem = (props) => {
